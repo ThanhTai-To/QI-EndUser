@@ -202,13 +202,16 @@ function addPaginationItemsListener() {
 
 function addOptionSelectsListener() {
     fromProvince.addEventListener('click', function() {
-        console.log(fromProvince.value);
+        // set page to 0
         sessionStorage.setItem("from", fromProvince.value);
+        sessionStorage.setItem("currentPage", 0);
         location.reload();
     })
     destination.addEventListener('click', function() {
+        // set page = 0
         console.log(destination.value);
         sessionStorage.setItem("destination", destination.value);
+        sessionStorage.setItem("currentPage", 0);
         location.reload();
     })
 }
