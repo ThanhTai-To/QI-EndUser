@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e3e5e9;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 18%;
+    background-color: #4f5069;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: white !important;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #606186;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar div {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar div select {
+    padding: 3px;
+    margin: 3px;
+    border-radius: 7px;
+}
+
+
+.sidebar div select:hover {
+    padding: 4px;
+    border-color:  rgb(21, 113, 218);
+    border-radius: 7px;
+}
+
+.right-sidebar {
+    width: 82%;
+    height: 100%;
+    right: 0px;
+    padding: 5px;
+    position: absolute;
+}
+
+
+.content-block {
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+.pagination-bar {
+    justify-content: center;
+}
+
+.block-qi {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 0px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 3px rgb(189, 187, 187);
+}
+
+.block-qi:hover {
+    background-color: #f8f5f5;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px grey;
+}
+
+.inside-block-qi .text {
+    display: inline-block;
+}
+
+.content-block-qi .text {
+    padding-left: 15px;
+}
+
+.reason-updated .text {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #b30b2d;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.from-place {
+    color: green;
+}
+
+.destination-place {
+    color: rgb(211, 12, 12);
+}
+
+
+#home-page-pagination {
+    box-shadow: -5px 8px 10px 0px grey;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar {
+        width: 25%;
+    }
+
+
+    .right-sidebar {
+        width: 75%;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 400px) {
+        .sidebar a {
+            text-align: center;
+            float: none;
+        }
+    }
+}
+
+/* Loader */
+#loader {
+    justify-content: center;
+}

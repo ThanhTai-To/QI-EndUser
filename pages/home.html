@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarantine information management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body onload=loadBody() id="body">
+    <div class="sidebar">
+        <a  href="#" id="home-nav">From</a>
+        <div>
+            <select name="from" id="from">
+            </select>
+        </div>
+        <a href="#" id="create-qi-nav">Destination</a>
+        <div>
+            <select name="destination" id="destination">
+            </select>
+        </div>
+    </div>
+
+    <div class="right-sidebar">
+        <div class="container">
+            <div class="row" id="loader"><em class="fa fa-spinner fa-spin fa-5x" id='loader-icon'></em></div>
+            <div class="row content-block">
+                <div class="container" id="block-content">
+                </div> <!-- end .container #block-content -->
+            </div> <!-- end .row .content-block -->
+
+            <div class="row pagination-bar">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination" id="home-page-pagination">
+                    </ul>
+                </nav>
+            </div> <!-- end .pagination-bar -->
+        </div> <!-- end .container -->
+    </div> <!-- end .right-sidebar -->
+
+    <script src="../js/home.js"></script>
+    <script src="../js/province.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
