@@ -244,20 +244,20 @@ function loadOptionsOfSelects() {
     }
 }
 
-function addOptionsToSelectFrom(fromProvince, key) {
+function addOptionsToSelectFrom(fromProvinceElement, key) {
     var option = document.createElement("option");
     option.text = PROVINCE[key].vi;
     option.setAttribute('value', PROVINCE[key].enum);
     option.setAttribute('id', 'FROM_' + PROVINCE[key].enum);
-    fromProvince.add(option, fromProvince[-1]);
+    fromProvinceElement.add(option, fromProvinceElement[-1]);
 }
 
-function addOptionsToSelectDestination(destination, key) {
+function addOptionsToSelectDestination(destinationElement, key) {
     var option = document.createElement("option");
     option.text = PROVINCE[key].vi;
     option.setAttribute('value', PROVINCE[key].enum);
     option.setAttribute('id', 'DESTINATION_' + PROVINCE[key].enum);
-    destination.add(option, destination[-1]);
+    destinationElement.add(option, destinationElement[-1]);
 }
 
 function addOptionAllToSelect(element, all="ALL") {
