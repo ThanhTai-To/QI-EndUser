@@ -74,13 +74,13 @@ function displayBlockQuarantineInformation(element) {
         `<div class="row block-qi" id="` + element.id + `">
         <div class="container inside-block-qi">
             <div class="row date-valid-block-qi">
-                    <p class="text">From ` + element.startAt + returnEndDate(element.endAt) + `: this information will valid</p>
+                    <p class="text">Từ ` + element.startAt + returnEndDate(element.endAt) + `: Thông tin này sẽ có hiệu lực</p>
                     ` + checkQuarantineInformationStatus(element.status) + `
             </div>
             <hr>
             <div class="row content-block-qi">
                 <p class="text destination-place">` + PROVINCE[element.destination].vi + `</p>
-                <p class="text fixed-text">will isolate people come from</p>
+                <p class="text fixed-text">sẽ cách ly người đến từ tỉnh</p>
                 <p class="text from-place">` + PROVINCE[element.originFrom].vi + `</p>
             </div>
             <div class="row reason-updated">
@@ -100,7 +100,7 @@ function returnEndDate(endDate) {
     if (endDate == null) {
         return ``;
     }
-    return ` To ` + endDate;
+    return ` Đến ` + endDate;
 }
 
 function checkQuarantineInformationStatus(status = 'NEW') {
